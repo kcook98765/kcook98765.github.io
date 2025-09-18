@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="plugin.video.librarygenie" name="LibraryGenie" version="0.8.0" provider-name="LibraryGenie Team">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.python.script" library="utilities.py" />
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="context.py">
+        <label>37028</label>
+        <visible>true</visible>
+      </item>
+    </menu>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Smart list management for your Kodi library</summary>
+    <description lang="en_GB">LibraryGenie provides powerful list management capabilities for your Kodi media library. Create custom lists, organize with folders, search your collection, and sync with Kodi favorites. Features include hierarchical folder organization, universal context menus, quick-add functionality, import/export capabilities, and AI-powered search integration. Access via Video Add-ons for lists or Programs for search tools.</description>
+    <disclaimer lang="en_GB">This addon requires network access for optional AI search features and remote synchronization.</disclaimer>
+    <license>MIT</license>
+    <website>https://github.com/your-repo/plugin.video.librarygenie</website>
+    <email>your-email@example.com</email>
+    <source>https://github.com/your-repo/plugin.video.librarygenie</source>
+    <news />
+    <assets>
+      <icon>resources/list_folder_icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon><addon id="repository.kcook98765" name="K Cook Addon Repo" version="1.0.0" provider-name="kcook98765">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/kcook98765/kcook98765.github.io/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/kcook98765/kcook98765.github.io/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/kcook98765/kcook98765.github.io/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>K Cook Addon Repo</summary>
+        <description>My Addon Repo</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon></addons>
