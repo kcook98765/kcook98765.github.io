@@ -1,3 +1,4 @@
 [submodule "repo/plugin.video.librarygenie"]
 	path = repo/plugin.video.librarygenie
 	url = https://github.com/kcook98765/plugin.video.librarygenie
+	branch = main
